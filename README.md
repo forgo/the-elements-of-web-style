@@ -6,8 +6,6 @@ This guide is based on the author's personal experience in web design from 2005 
 
 My personal projects, from the days of futzing with custom CSS on a MySpace profile (R.I.P) to the concepts I implemented the "right way" (the cathartic solution to bad management), also inform this guide.
 
-You might notice my ideas deviate from well-liked authorities and solutions. With so many unexplored ideas out there, tradition never really served me well.
-
 Primarily I'd like to convey, contrary to popular belief, process _can_ yield aesthetically pleasing results alongside functional results. Furthermore, that process does not have to be complex. When it comes to style, there are a lot of good heuristics floating around the web and in my head. Here's what I'd like to do with those:
 
 - consolidate coherent and consumable rules into applicable scenarios
