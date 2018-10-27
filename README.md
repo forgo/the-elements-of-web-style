@@ -18,7 +18,7 @@ I've taken cues from many sources over the years, many of them littered over the
 I would be remiss to not give some high-level shoutouts:
 
 - [Eric Meyer](https://meyerweb.com/ui/about.html)
-  - This dude has been giving solid advice since I learned what CSS was in 2005.
+  - This dude has helped shape web style since before I learned what CSS was.
 - [stackoverflow.com](https://stackoverflow.com/)
   - An invaluable resource of countless developers from time immemorial (actually 2008, but you know)
 - [The Elements of Style](http://www.jlakes.org/ch/web/The-elements-of-style.pdf)
