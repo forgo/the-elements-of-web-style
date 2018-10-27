@@ -27,6 +27,12 @@ I would be remiss to not give some high-level shoutouts:
 ## III. ELEMENTARY RULES OF CSS
 
 ## IV. ELEMENTARY PRINCIPLES OF LAYOUT
+1) Optimize line length for readability.
+
+### References
+- [Readability: the Optimal Line Length](https://baymard.com/blog/line-length-readabilityhttps://baymard.com/blog/line-length-readability)
+- [The Elements of Typographic Style Applied to the Web](http://webtypography.net/2.1.2)
+- [Ideal line length for content](http://maxdesign.com.au/articles/em/)
 
 ## V. A FEW MATTERS OF FORM
 
