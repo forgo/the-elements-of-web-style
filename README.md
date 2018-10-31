@@ -144,7 +144,21 @@ If you were to look at one of my component styles, you will find what might seem
 0.105em ~ 0.25/φ (quarter inverse golden ratio)
 ```
 
-By themselves and strictly speaking, these values have very little meaning without the context in which they are set. Mostly, we find that they lend themselves naturally to an aesthetically pleasing layout when used properly.
+You can imagine another set of numbers used that nest the golden ratio multiplicatively, if that satsifies you more:
+
+```
+1.618em ~ φ (the golden ratio)
+0.618em ~ 1/φ (inverse golden ratio)
+0.382em ~ 1/φ² (inverse golden ratio squared)
+0.236em ~ 1/φ³ (inverse golden cubed)
+0.146em ~ 1/φ⁴ (inverse golden quartic)
+...
+```
+
+The golden ratio itself is sometimes too much spacing to employ for certain elements, and a smaller margin or padding may be desired. This is why I often use the inverse golden ratio and derivations of it. By themselves and strictly speaking, these values have very little meaning without the context in which they are set. Mostly, we find that they lend themselves naturally to an aesthetically pleasing layout when used properly. Most importantly, these values should be used consistently throughout your site. 
+
+
+
 
 ## VI. STYLES AND TECHNIQUES COMMONLY MISUSED
 
