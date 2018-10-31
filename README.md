@@ -29,7 +29,7 @@ I would be remiss to not give some high-level shoutouts:
 ## IV. ELEMENTARY PRINCIPLES OF LAYOUT
 1) Optimize line length for readability.
 
-Studies show that the ideal number of characters (for readability) that should be on a line before wrapping is somewhere between50 and 75 characters (source: https://baymard.com/blog/line-length-readability). Of course, this is mostly applicable to continuous, paragraph style content. In the case of our 25em-wide search result card, having a smaller width is not as much of a concern because "breaking the reader's" rhythym isn't as much of a concern with a blurb like a title.
+Studies show the ideal number of characters (for readability) on a line before wrapping is somewhere between 50 and 75 characters<sup>[1](#myfootnote1)</sup>. Of course, this is mostly applicable to continuous, paragraph style content. In the case of our 25em-wide search result card, having a smaller width is not as much of a concern because "breaking the reader's" rhythym isn't as much of a concern with a blurb like a title.
 
 On the other hand, consider if we allow the search results to be displayed in a list-format instead of a grid format. For long, winding, technical titles (which is not uncommon for data scientists to create), we might consider wrapping the title text before this supposed 75-character threshold to avoid the other concern: "the reader’s eyes will have a hard time focusing on the text."
 
@@ -37,6 +37,7 @@ On the other hand, consider if we allow the search results to be displayed in a 
 - [Readability: the Optimal Line Length](https://baymard.com/blog/line-length-readability)
 - [The Elements of Typographic Style Applied to the Web](http://webtypography.net/2.1.2)
 - [Ideal line length for content](http://maxdesign.com.au/articles/em/)
+<a name="myfootnote1">1</a>: Footnote content goes here
 
 ## V. A FEW MATTERS OF FORM
 1) Maintain proportionality.
