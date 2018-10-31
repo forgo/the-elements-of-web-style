@@ -27,7 +27,7 @@ I would be remiss to not give some high-level shoutouts:
 ## III. ELEMENTARY RULES OF CSS
 
 ## IV. ELEMENTARY PRINCIPLES OF LAYOUT
-1) Optimize line length for readability.
+### 1) Optimize line length for readability.
 
 Studies show the ideal number of characters (for readability) on a line before wrapping is somewhere between 50 and 75 characters<sup>[1](#line-length-readability)</sup>. This mostly applies to continuous, paragraph-style content.
 
@@ -41,14 +41,15 @@ On the other hand, consider if we allow the search results to be displayed in a 
 - [Ideal line length for content](http://maxdesign.com.au/articles/em/)
 
 ## V. A FEW MATTERS OF FORM
-1) Maintain proportionality.
+### 1) Maintain proportionality.
 
 Dimensional styles such as `font-size`, `padding`, `margin`, `border`, `box-shadow`, and so on within the `<body>` of the site should resize proportionally with screen size and device orienation.
 
-Maintaining these proportions can be accomplished with a globally-applied CSS `@media` rules. These rules are a sequence of `min-width` thresholds about which the base font size and animated properties<sup>[2](#animated-properties)</sup> can be transitioned. The `min-width`s and `font-size` specified here are intended by be absolute units<sup>[3](#css-units)</sup> (e.g. - `px`). Subsequent dimensional styles set in the application use relative units (e.g. - `em`) to maintain proportion relative to the absolute font-size set at the different thresholds.
+Maintaining these proportions can be accomplished with a globally-applied CSS `@media` rules. These rules are a sequence of `min-width` thresholds about which the base font size and animated properties<sup>[2](#animated-properties)</sup> can be transitioned. The `min-width`s and `font-size` specified here are intended to be absolute units<sup>[3](#css-units)</sup> (e.g. - `px`).
 
-The `font-size`s and thresholds are up to the designer and may be different for different content and font types. The `font-size`s are easily tweaked after the fact to produce optimal proportion. In theory, more thresholds account for more use cases. In practice, we can leverage the fact that most devices have common resolutions<sup>[4](#screen-resolutions)</sup> in `px` units, so common factors among screen resolutions should suffice. 
+The `font-size`s and thresholds are up to the designer and may be different for different content and font types. The `font-size`s are easily tweaked after the fact to produce optimal proportion. In theory, more thresholds account for more use cases.
 
+In practice, we can leverage the fact that most devices have common resolutions<sup>[4](#screen-resolutions)</sup> in `px` units, so common factors among screen resolutions should suffice. Keep in mind `font-size` may not need to jump whole pixel values between adjacent thresholds. If so, these threshold boundaries can be collapsed.
 
 ### Example
 ```css
@@ -95,24 +96,27 @@ The `font-size`s and thresholds are up to the designer and may be different for 
 }
 ```
 
-You can think of these font sizes as what represents '1em' in subsequent styles on the page. We attempt to make all our component inline-styles 'em'-based so that our content looks natural and proportional for as many screen sizes as possible. This is also especially important for dimensional styles such as padding, margin, offsets, borders, shadows, etc...
+Subsequent dimensional styles should be set in relative units (e.g. - `em`) to maintain proportion at the different thresholds. You can think of the above `font-size`s as what represents `1em` on differently sized screens and windows.
 
-For example:
+With `padding: '2em'` when the device width is between `160-320px`, the fixed-pixel equivalent would be:
 
-With `padding: '2em'` when the device min-width is between 160px and 320px, the fixed pixel equivalent would be:
+`2 * (1em) = 2 * (11px) = 22px`
 
-`2 * (11px) = 22px`
+However, when the device width is between `320-480px`, the fixed-pixel equivalent would be:
 
-However, when the device min-width is between 320px and 480px, the fixed-pixel equivalent would be:
+`2 * (1em) = 2 * (12px) = 24px`
 
-`2 * (12px) = 24px`
+Therefore, when the screen increases past a `320px` width threshold, the padding you had set to a constant `2em` would effectively animate from `22px` to `24px`. The benefit here is that the units are relative to our base `font-size`s set in the corresponding `@media` query. When the screen size is changing due to the user expanding a window or rotating a mobile-device, the transition provides an additional benefit of animating what it can for a more seamless visual effect.
 
-Therefore, when the screen increases past a 320px width threshold, the padding you had set to a constant '2em' would effectively animate from '22px' to '24px'. The benefit here is that the units are relative to our base font-size. This gives proportionality and generally prevents having to refactor hard-coded pixel units that are inherently relative to other dimensions in your site. Think aspect ratios, the spacing between the text of one paragraph to the next, and the buffer between the border of a button and the text or image inside of it.
+This maintains consistent proportion and prevents having to refactor hard-coded pixel units whenever you change the layout or other styles.
 
-Let's say you started with a paragraph font-size of '10px' and had set the margin or padding between paragraphs to always be '16px'. This might look aesthetic to start with
+Imagine the spacing between the text of one paragraph to the next, and the spacing between the border of a button and the text inside of it.
 
-Typically, without explicitly styling otherwise or being determined by a parent element's style, the text of an element will default to '1em', so setting an explicit font-size is generally avoided unless the element actually calls for it, and it should still be 'em' based.
+The `font-size` of an element will default to `1em`, so it will inherit the definition of `1em` from the `px`-based `font-size` above it -- unless that `font-size` is explicitly overwritten in a parent of the element. Setting an absolute `font-size` unit outside of the `@media` CSS queries should be generally avoided.
 
+### 1) Employ the golden ratio.
+
+When using relative dimensions, 
 
 ### References
 - <a name="animated-properties">[1]</a> [CSS Aniamted Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
