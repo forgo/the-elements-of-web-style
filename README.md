@@ -36,7 +36,7 @@ With more terse content (e.g. - ), having a smaller width is not as much of a co
 On the other hand, consider if we allow the search results to be displayed in a list-format instead of a grid format. For long, winding, technical titles (which is not uncommon for data scientists to create), we might consider wrapping the title text before this supposed 75-character threshold to avoid the other concern: "the reader’s eyes will have a hard time focusing on the text."
 
 ### References
-- <a name="line-length-readability"/>[Readability: the Optimal Line Length](https://baymard.com/blog/line-length-readability)
+- <a name="line-length-readability">[1]</a> [Readability: the Optimal Line Length](https://baymard.com/blog/line-length-readability)
 - [The Elements of Typographic Style Applied to the Web](http://webtypography.net/2.1.2)
 - [Ideal line length for content](http://maxdesign.com.au/articles/em/)
 
@@ -49,49 +49,6 @@ Maintaining these proportions can be accomplished with a globally-applied CSS `@
 
 The `font-size`s and thresholds are up to the designer and may be different for different content and font types. The `font-size`s are easily tweaked after the fact to produce optimal proportion. In theory, more thresholds account for more use cases. In practice, we can leverage the fact that most devices have common resolutions<sup>[4](#screen-resolutions)</sup> in `px` units, so common factors among screen resolutions should suffice. 
 
-
-
-
-
-
-You can think of these font sizes as what represents '1em'
-in subsequent styles on the page. We attempt to make all our
-component inline-styles 'em'-based so that our content looks
-natural and proportional for as many screen sizes as possible.
-This is also especially important for dimensional styles such
-as padding, margin, offsets, borders, shadows, etc...
-
-For example:
-
-With `padding: '2em'` when the device min-width is between
-160px and 320px, the fixed pixel equivalent would be:
-
-  2 * (11px) = 22px
-
-However, when the device min-width is between 320px and 480px,
-the fixed-pixel equivalent would be:
-
-  2 * (12px) = 24px
-
-Therefore, when the screen increases past a 320px width
-threshold, the padding you had set to a constant '2em' would
-effectively animate from '22px' to '24px'. The benefit here is
-that the units are relative to our base font-size. This gives
-proportionality and generally prevents having to refactor
-hard-coded pixel units that are inherently relative to other
-dimensions in your site. Think aspect ratios, the spacing between
-the text of one paragraph to the next, and the buffer between the
-border of a button and the text or image inside of it.
-
-Let's say you started with a paragraph font-size of '10px' and
-had set the margin or padding between paragraphs to always be
-'16px'. This might look aesthetic to start with
-
-Typically, without explicitly styling otherwise or being
-determined by a parent element's style, the text of an element
-will default to '1em', so setting an explicit font-size is
-generally avoided unless the element actually calls for it, and
-it should still be 'em' based.
 
 ### Example
 ```css
@@ -138,10 +95,29 @@ it should still be 'em' based.
 }
 ```
 
+You can think of these font sizes as what represents '1em' in subsequent styles on the page. We attempt to make all our component inline-styles 'em'-based so that our content looks natural and proportional for as many screen sizes as possible. This is also especially important for dimensional styles such as padding, margin, offsets, borders, shadows, etc...
+
+For example:
+
+With `padding: '2em'` when the device min-width is between 160px and 320px, the fixed pixel equivalent would be:
+
+`2 * (11px) = 22px`
+
+However, when the device min-width is between 320px and 480px, the fixed-pixel equivalent would be:
+
+`2 * (12px) = 24px`
+
+Therefore, when the screen increases past a 320px width threshold, the padding you had set to a constant '2em' would effectively animate from '22px' to '24px'. The benefit here is that the units are relative to our base font-size. This gives proportionality and generally prevents having to refactor hard-coded pixel units that are inherently relative to other dimensions in your site. Think aspect ratios, the spacing between the text of one paragraph to the next, and the buffer between the border of a button and the text or image inside of it.
+
+Let's say you started with a paragraph font-size of '10px' and had set the margin or padding between paragraphs to always be '16px'. This might look aesthetic to start with
+
+Typically, without explicitly styling otherwise or being determined by a parent element's style, the text of an element will default to '1em', so setting an explicit font-size is generally avoided unless the element actually calls for it, and it should still be 'em' based.
+
+
 ### References
-- <a name="animated-properties">[1]</a>[CSS Aniamted Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
-- <a name="css-units">[2]</a>[CSS Units](https://www.w3schools.com/cssref/css_units.asp)
-- <a name="screen-resolutions">[3]</a>[Screen Resolution Statistics](https://www.rapidtables.com/web/dev/screen-resolution-statistics.html)
+- <a name="animated-properties">[1]</a> [CSS Aniamted Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
+- <a name="css-units">[2]</a> [CSS Units](https://www.w3schools.com/cssref/css_units.asp)
+- <a name="screen-resolutions">[3]</a> [Screen Resolution Statistics](https://www.rapidtables.com/web/dev/screen-resolution-statistics.html)
 
 ## VI. STYLES AND TECHNIQUES COMMONLY MISUSED
 
