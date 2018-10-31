@@ -133,6 +133,18 @@ AR = w/h = φ
 h = w/φ ≈ 12em/1.618 ≈ 7.416em
 ```
 
+As soon as I had set this aspect ratio, my coworkers immediately recognized it was the natural answer to the problem. Variations and divisions of the golden ratio can be used similarly to set dimensional styles such as `font-size`, `margin`, `padding`.
+
+If you were to look at one of my component styles, you will find what might seem like strange values for `em`-based values scattered throughout the site, but there is an actual method to this madness. Take note of what some of these numbers represent:
+
+```
+1.618em ~ φ (the golden ratio)
+0.618em ~ 1/φ (inverse golden ratio)
+0.309em ~ 0.5/φ (half inverse golden ratio)
+0.105em ~ 0.25/φ (quarter inverse golden ratio)
+```
+
+By themselves and strictly speaking, these values have very little meaning without the context in which they are set. Mostly, we find that they lend themselves naturally to an aesthetically pleasing layout when used properly.
 
 ## VI. STYLES AND TECHNIQUES COMMONLY MISUSED
 
