@@ -114,14 +114,25 @@ Imagine the spacing between the text of one paragraph to the next, and the spaci
 
 The `font-size` of an element will default to `1em`, so it will inherit the definition of `1em` from the `px`-based `font-size` above it -- unless that `font-size` is explicitly overwritten in a parent of the element. Setting an absolute `font-size` unit outside of the `@media` CSS queries should be generally avoided.
 
-### 1) Employ the golden ratio.
-
-When using relative dimensions, 
-
 ### References
 - <a name="animated-properties">[1]</a> [CSS Animated Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
 - <a name="css-units">[2]</a> [CSS Units](https://www.w3schools.com/cssref/css_units.asp)
 - <a name="screen-resolutions">[3]</a> [Screen Resolution Statistics](https://www.rapidtables.com/web/dev/screen-resolution-statistics.html)
+
+### 2) Employ the golden ratio.
+
+When using relative dimensions, use time-tested universal constants and mathematical concepts. I once found myself in a situation with coworkers, tweaking the dimensions of a rectangular component on our site. Nobody was satisfied with outcome of the guess-and-check method being employed. So, I decided to utilize some math. The golden ratio (phi: φ ≈ 1.618), has long been known to produce aesthetically pleasing proportions in architecture and also occurs in nature.
+
+If the width `w` of an element is fixed, I can easily calculate the height `h` to maintain an aspect ratio `AR` equal to the golden ratio `φ`.
+
+### Example
+```
+h = ?
+w = 12em
+AR = w/h = φ
+h = w/φ ≈ 12em/1.618 ≈ 7.416em
+```
+
 
 ## VI. STYLES AND TECHNIQUES COMMONLY MISUSED
 
