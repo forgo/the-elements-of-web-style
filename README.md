@@ -139,9 +139,9 @@ it should still be 'em' based.
 ```
 
 ### References
-- <a name="animated-properties" />[\[1\]CSS Aniamted Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
-- <a name="css-units" />[CSS Units](https://www.w3schools.com/cssref/css_units.asp)
-- <a name="screen-resolutions" />[Screen Resolution Statistics](https://www.rapidtables.com/web/dev/screen-resolution-statistics.html)
+- <a name="animated-properties">[1]</a>[CSS Aniamted Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
+- <a name="css-units">[2]</a>[CSS Units](https://www.w3schools.com/cssref/css_units.asp)
+- <a name="screen-resolutions">[3]</a>[Screen Resolution Statistics](https://www.rapidtables.com/web/dev/screen-resolution-statistics.html)
 
 ## VI. STYLES AND TECHNIQUES COMMONLY MISUSED
 
