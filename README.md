@@ -119,7 +119,7 @@ The `font-size` of an element will default to `1em`, so it will inherit the defi
 When using relative dimensions, 
 
 ### References
-- <a name="animated-properties">[1]</a> [CSS Aniamted Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
+- <a name="animated-properties">[1]</a> [CSS Animated Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
 - <a name="css-units">[2]</a> [CSS Units](https://www.w3schools.com/cssref/css_units.asp)
 - <a name="screen-resolutions">[3]</a> [Screen Resolution Statistics](https://www.rapidtables.com/web/dev/screen-resolution-statistics.html)
 
