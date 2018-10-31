@@ -34,7 +34,7 @@ Studies show the ideal number of characters (for readability) on a line before w
 On the other hand, consider if we allow the search results to be displayed in a list-format instead of a grid format. For long, winding, technical titles (which is not uncommon for data scientists to create), we might consider wrapping the title text before this supposed 75-character threshold to avoid the other concern: "the reader’s eyes will have a hard time focusing on the text."
 
 ### References
-- <a name="line-length-readability"></a>[Readability: the Optimal Line Length](https://baymard.com/blog/line-length-readability)
+- <a name="line-length-readability"/>[Readability: the Optimal Line Length](https://baymard.com/blog/line-length-readability)
 - [The Elements of Typographic Style Applied to the Web](http://webtypography.net/2.1.2)
 - [Ideal line length for content](http://maxdesign.com.au/articles/em/)
 
