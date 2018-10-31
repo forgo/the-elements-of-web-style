@@ -31,7 +31,7 @@ I would be remiss to not give some high-level shoutouts:
 
 Studies show the ideal number of characters (for readability) on a line before wrapping is somewhere between 50 and 75 characters<sup>[1](#line-length-readability)</sup>. This mostly applies to continuous, paragraph-style content.
 
-With more terse content (e.g. - ), having a smaller width is not as much of a concern because "breaking the reader's" rhythym isn't as much of a concern with a blurb like a title.
+With more terse content like , having a smaller width is not as much of a concern because "breaking the reader's" rhythym isn't as much of a concern with a blurb like a title.
 
 On the other hand, consider if we allow the search results to be displayed in a list-format instead of a grid format. For long, winding, technical titles (which is not uncommon for data scientists to create), we might consider wrapping the title text before this supposed 75-character threshold to avoid the other concern: "the reader’s eyes will have a hard time focusing on the text."
 
