@@ -155,7 +155,9 @@ You can imagine another set of numbers used that nest the golden ratio multiplic
 ...
 ```
 
-The golden ratio itself is sometimes too much spacing to employ for certain elements, and a smaller margin or padding may be desired. This is why I often use the inverse golden ratio and derivations of it. By themselves and strictly speaking, these values have very little meaning without the context in which they are set. Mostly, we find that they lend themselves naturally to an aesthetically pleasing layout when used properly. Most importantly, these values should be used consistently throughout your site. 
+The golden ratio itself is sometimes too much spacing to employ for certain elements, and a smaller margin or padding may be desired. This is why I often use the inverse golden ratio and derivations of it.
+
+By themselves and strictly speaking, these values have very little meaning without the context in which they are set. Mostly, we find that they lend themselves naturally to an aesthetically pleasing layout when used properly. Most importantly, these values should be used *consistently* throughout your site.
 
 
 
