@@ -138,20 +138,20 @@ As soon as I had set this aspect ratio, my coworkers immediately recognized it w
 If you were to look at one of my component styles, you will find what might seem like strange values for `em`-based values scattered throughout the site, but there is an actual method to this madness. Take note of what some of these numbers represent:
 
 ```
-1.618em ~ φ (the golden ratio)
-0.618em ~ 1/φ (inverse golden ratio)
-0.309em ~ 0.5/φ (half inverse golden ratio)
-0.105em ~ 0.25/φ (quarter inverse golden ratio)
+1.618em ≈ φ (the golden ratio)
+0.618em ≈ 1/φ (inverse golden ratio)
+0.309em ≈ 0.5/φ (half inverse golden ratio)
+0.105em ≈ 0.25/φ (quarter inverse golden ratio)
 ```
 
 You can imagine another set of numbers used that nest the golden ratio multiplicatively, if that satsifies you more:
 
 ```
-1.618em ~ φ (the golden ratio)
-0.618em ~ 1/φ (inverse golden ratio)
-0.382em ~ 1/φ² (inverse golden ratio squared)
-0.236em ~ 1/φ³ (inverse golden cubed)
-0.146em ~ 1/φ⁴ (inverse golden quartic)
+1.618em ≈ φ (the golden ratio)
+0.618em ≈ 1/φ (inverse golden ratio)
+0.382em ≈ 1/φ² (inverse golden ratio squared)
+0.236em ≈ 1/φ³ (inverse golden cubed)
+0.146em ≈ 1/φ⁴ (inverse golden quartic)
 ...
 ```
 
