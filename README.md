@@ -159,12 +159,28 @@ The golden ratio itself is sometimes too much spacing to employ for certain elem
 
 By themselves and strictly speaking, these values have very little meaning without the context in which they are set. Mostly, we find that they lend themselves naturally to an aesthetically pleasing layout when used properly. Most importantly, these values should be used *consistently* throughout your site.
 
-
+For example, the margin between paragraphs might be `1.618em`, but the this is likely too big of a spacing when in the context of a button's content padding. In this situation you could apply `0.309em`. These mappings are not set in stone, but once you find a proportion that flows with your content, being consistent  with them most often yields consistently pleasing results.
 
 
 ## VI. STYLES AND TECHNIQUES COMMONLY MISUSED
+1) Spacing is a convention, not a convenience.
+
+The goal of computers is to make our lives easier. When it comes to user interfaces, we want to create reusable components that can naturally flow into any part of the site, without patching values and extending functionality. 
+
+How can we accomplish this? A mistake I commonly see developers making is to place a new component into a site and then style it until it looks "good". The problem I see with this approach is that it's unnecessary and counterproductive.
+
+Think for a moment why your component doesn't "fit" quite right when you first place it on the page.
+
+- Default browser spacings
+- No universally-agreed upon convention
+- CSS Resets (helpful start)
+- I will give you a convention that will prevent whack-o-mole styling
 
 ## VII. AN APPROACH TO STYLE (With a List of Reminders)
+
+1) Some style is truly iterative, creative, and not process-oriented.
+
+There truly is not a one-size fits all solution for style. The goal of this guide is to help you recognize where you are making your life difficult, so you can spend time on a truly creative process.
 
 ## VIII. AFTERWORD
 
