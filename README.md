@@ -189,6 +189,14 @@ Think for a moment why your component doesn't "fit" quite right when you first p
 
 There truly is not a one-size fits all solution for style. The goal of this guide is to help you recognize where you are making your life difficult, so you can spend time on a truly creative process.
 
+2) No matter the convention you employ, be _consistent_.
+
+You can use all the fancy tricks and tools out there, but if you do not employ them consistently, your outcomes will suffer from the same inconsistency.
+
+3) Be explicit where you can.
+
+Where reasonable, do not rely on the automatic behavior of languages, libraries, and frameworks. The convenience of tools is negated by use cases they do not cover. If your use case falls into outside the average, do not settle for average.
+
 ## VIII. AFTERWORD
 
 ## IX. GLOSSARY
