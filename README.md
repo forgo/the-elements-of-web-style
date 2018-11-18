@@ -137,7 +137,7 @@ h = w/φ ≈ 12em/1.618 ≈ 7.416em
 
 As soon as I had set this aspect ratio, my coworkers immediately recognized it was the natural answer to the problem. Variations and divisions of the golden ratio can be used similarly to set dimensional styles such as `font-size`, `margin`, `padding`.
 
-If you were to look at one of my component styles, you will find what might seem like strange values for `em`-based values scattered throughout the site, but there is an actual method to this madness. Take note of what some of these numbers represent:
+If you inspect a component style, don't be put off by non-whole `em`-based values. There can be an actual method to this madness. Take note of what some of these numbers might represent:
 
 ```
 1.618em ≈ φ (the golden ratio)
@@ -161,7 +161,7 @@ The golden ratio itself is sometimes too much spacing to employ for certain elem
 
 By themselves and strictly speaking, these values have very little meaning without the context in which they are set. Mostly, we find that they lend themselves naturally to an aesthetically pleasing layout when used properly. Most importantly, these values should be used *consistently* throughout your site.
 
-For example, the margin between paragraphs might be `1.618em`, but the this is likely too big of a spacing when in the context of a button's content padding. In this situation you could apply `0.309em`. These mappings are not set in stone, but once you find a proportion that flows with your content, being consistent  with them most often yields consistently pleasing results.
+For example, the margin between paragraphs might be `1.618em`, but the this is likely too big of a spacing when in the context of a button's content padding. In this situation you could apply `0.309em`. These mappings are not set in stone, but once you find a proportion that flows with your content, being consistent with them most often yields consistently pleasing results.
 
 
 ## VI. STYLES AND TECHNIQUES COMMONLY MISUSED
@@ -171,12 +171,12 @@ The goal of computers is to make our lives easier. When it comes to user interfa
 
 How can we accomplish this? A mistake I commonly see developers making is to place a new component into a site and then style it until it looks "good". The problem I see with this approach is that it's unnecessary and counterproductive.
 
-Think for a moment why your component doesn't "fit" quite right when you first place it on the page.
+Think for a moment why your component doesn't "fit" quite right when you first place it on the page. Consider these scenarios:
 
-- Default browser spacings
-- No universally-agreed upon convention
-- CSS Resets (helpful start)
-- I will give you a convention that will prevent whack-o-mole styling
+| Problem | Potential Solution |
+| --- | --- |
+| Default browser spacings | CSS Resets (helpful start) |
+| No universally agreed-upon convention | Convention that will prevent whack-o-mole styling |
 
 ## VII. AN APPROACH TO STYLE (With a List of Reminders)
 
