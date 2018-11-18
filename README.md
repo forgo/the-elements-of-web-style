@@ -177,6 +177,11 @@ Think for a moment why your component doesn't "fit" quite right when you first p
 | --- | --- |
 | Default browser spacings | CSS Resets (helpful start) |
 | No universally agreed-upon convention | Convention that will prevent whack-o-mole styling |
+| Dimensions do not resize dynamically with screen | Use CSS Flexbox<sup>[1](#css-flexbox)</sup> and Grid Layout<sup>[2](#css-grid)</sup> |
+
+### References
+- <a name="css-flexbox">[1]</a> [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+- <a name="css-grid">[2]</a> [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
 
 ## VII. AN APPROACH TO STYLE (With a List of Reminders)
 
