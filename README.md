@@ -1,4 +1,4 @@
- <span style=“color:red;”><b>Note</b>: This guide is actively being written.</span>
+`This guide is incomplete and actively being written.`
  
 # The Elements of Web Style
 Universal techniques to improve and enhance any web UI.
