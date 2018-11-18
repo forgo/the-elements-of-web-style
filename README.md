@@ -195,7 +195,7 @@ You can use all the fancy tricks and tools out there, but if you do not employ t
 
 3) Be explicit where you can.
 
-Where reasonable, do not rely on the automatic behavior of languages, libraries, and frameworks. The convenience of tools is negated by use cases they do not cover. If your use case falls into outside the average, do not settle for average.
+Where reasonable, do not rely on the automatic behavior of languages, libraries, and frameworks. The convenience of tools is negated by use cases they do not cover. If your use case falls outside the average, do not settle for average.
 
 ## VIII. AFTERWORD
 
