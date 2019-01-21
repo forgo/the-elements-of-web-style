@@ -1,4 +1,4 @@
-`This guide is incomplete and actively being written.`
+`This guide is actively being written.`
  
 # The Elements of Web Style
 Universal techniques to improve and enhance any web UI.
