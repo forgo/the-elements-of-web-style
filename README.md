@@ -27,6 +27,21 @@ I would be remiss to not give some high-level shoutouts:
   - A classic English reference book, the format of which I flippantly borrow. 
 
 ## III. ELEMENTARY RULES OF CSS
+### 1) Whenever possible, write rules that are reusable.
+
+In other aspects of our lives, rules are more useful when applied to a broader audience. In CSS, the `id` attribute is intended to be a unique value in your document. Singling out "special cases" can be useful, but good style often comes down to consistency (arguably the fundamental reason for a `class` attribute).
+
+Here is a particularly good example of design consistency:
+
+![visualization of the box-model](https://raw.githubusercontent.com/forgo/the-elements-of-web-style/master/img/box-model-good.png)
+
+[Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools/) gives us a convenient way to visualize some of the box-model by highlighting the margin and padding of elements when hovering over rules which apply to them. Train your eye to see these spacings without visual aid. Take note of spacing consistencies across the entire page. It is clear this page and the components which compose it were well-considered ahead of time.
+
+There's no way of knowing upon a cursory inspection that the CSS rules were optimized and minimized to produce this final display. We do know that there is opportunity, in this case, to do so without inducing refactor nightmares. 
+
+Now imagine the layout of the page depended on haphazard shifting, bumping, and scaling of elements; moreover, imagine elements are absolutely and relatively positioned, with overlapping box-models and inadvertent duplicate `id` attributes. The final product might look just as well to the naked eye, but what if your content changed or rearranged? What if you needed to reduce the size of your static assets such as CSS files?
+
+It's important to note content can dictate styling rules, so these rules should not be made in a vacuum. In the case of a magazine, the overall look-and-feel may not have changed over the centuries, but you can expect the length of articles, paragraphs, and headlines to be constantly changing, so your rules should be able to accomodate that variation without sacrificing the readability or aesthetics of the page.
 
 ## IV. ELEMENTARY PRINCIPLES OF LAYOUT
 ### 1) Optimize line length for readability.
