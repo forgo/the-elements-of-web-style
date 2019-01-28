@@ -186,11 +186,11 @@ The goal of computers is to make our lives easier. When it comes to user interfa
 
 How can we accomplish this? A mistake I commonly see developers making is to place a new component into a site and then style it until it looks "good". The problem I see with this approach is that it's unnecessary and counterproductive.
 
-Think for a moment why your component doesn't "fit" quite right when you first place it on the page. Consider these scenarios:
+Think for a moment why your component doesn't "fit" quite right when you first place it on the page. Consider the following problems and potential solutions in this situation:
 
 | Problem | Potential Solution |
 | --- | --- |
-| Default browser spacings | CSS Resets (helpful start) |
+| Bad default browser spacings | CSS Resets (helpful start) |
 | No universally agreed-upon convention | Convention that will prevent whack-o-mole styling |
 | Dimensions do not resize dynamically with screen | Use CSS Flexbox<sup>[1](#css-flexbox)</sup> and Grid Layout<sup>[2](#css-grid)</sup> |
 
