@@ -176,7 +176,7 @@ The golden ratio itself is sometimes too much spacing to employ for certain elem
 
 By themselves and strictly speaking, these values have very little meaning without the context in which they are set. Mostly, we find that they lend themselves naturally to an aesthetically pleasing layout when used properly. Most importantly, these values should be used *consistently* throughout your site.
 
-For example, the margin between paragraphs might be `1.618em`, but the this is likely too big of a spacing when in the context of a button's content padding. In this situation you could apply `0.309em`. These mappings are not set in stone, but once you find a proportion that flows with your content, being consistent with them most often yields consistently pleasing results.
+For example, the margin between paragraphs might be `1.618em`, but this is likely too big of a spacing when in the context of a button's content padding. In this situation you could apply `0.309em`. These mappings are not set in stone, but once you find a proportion that flows with your content, being consistent with them most often yields consistently pleasing results.
 
 
 ## VI. STYLES AND TECHNIQUES COMMONLY MISUSED
