@@ -194,6 +194,16 @@ Think for a moment why your component doesn't "fit" quite right when you first p
 | No universally agreed-upon convention | Convention that will prevent whack-o-mole styling |
 | Dimensions do not resize dynamically with screen | Use CSS Flexbox<sup>[1](#css-flexbox)</sup> and Grid Layout<sup>[2](#css-grid)</sup> |
 
+Flexbox and Grid Layout have some built in properties to allow some conventional spacing, but there are situations where the content in-between still needs to be handled with care. The most common situation is the general flow and spacing of headings, subheadings, and paragraphs in an article or blog. In these situations I have come up with a general convention for margin and spacing.
+
+Remember that margin and padding may accomplish the same spacing in some contexts, applying a margin over a padding can have consequences in a site with dynamic content. For example, adding margin to a 100% window width element can lead to situations where horizontal scroll is introduced and the content overlaps where you actually intend. In contrast, padding can be thought as pushing the content of an element inward. This is a bit of an oversimplification of the box-model, but it can help guide this spacing convention. Remember, that it helps to have a CSS reset so you can assume elements default to a 0 margin and padding -- rather than having to explicitly override those values when they are not needed.
+
+TODO: graphical example of layout + spacing convention (good vs bad)...
+
+Depending on how complex your layout gets and how you want to handle scrolling content you may find this technique more problematic to approach. For example...
+
+TODO: graphical example of more complex layout and explanation of how you can approach it...
+
 ### References
 - <a name="css-flexbox">[1]</a> [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
 - <a name="css-grid">[2]</a> [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
