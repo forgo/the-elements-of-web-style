@@ -196,7 +196,9 @@ Think for a moment why your component doesn't "fit" quite right when you first p
 
 Flexbox and Grid Layout have some built in properties to allow some conventional spacing, but there are situations where the content in-between still needs to be handled with care. The most common situation is the general flow and spacing of headings, subheadings, and paragraphs in an article or blog. In these situations I have come up with a general convention for margin and spacing.
 
-Remember that margin and padding may accomplish the same spacing in some contexts, applying a margin over a padding can have consequences in a site with dynamic content. For example, adding margin to a 100% window width element can lead to situations where horizontal scroll is introduced and the content extends beyond where you intend. In contrast, padding can be thought as pushing the content of an element inward. This is a bit of an oversimplification of the box-model, but it can help guide this spacing convention. Remember, that it helps to have a CSS reset so you can assume elements default to a 0 margin and padding -- rather than having to explicitly override those values when they are not needed.
+Remember that margin and padding may accomplish the same spacing in some contexts, applying a margin over a padding can have consequences in a site with dynamic content. For example, adding margin to a 100% window width element can lead to situations where horizontal scroll is introduced and the content extends beyond where you intend.
+
+In contrast, padding can be thought as pushing the content of an element inward. This is a bit of an oversimplification of the box-model, but it can help guide this spacing convention. Remember, that it helps to have a CSS reset so you can assume elements default to a 0 margin and padding -- rather than having to explicitly override those values when they are not needed.
 
 TODO: graphical example of layout + spacing convention (good vs bad)...
 
