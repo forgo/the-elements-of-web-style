@@ -212,7 +212,7 @@ TODO: graphical example of more complex layout and explanation of how you can ap
 
 1) Some style is truly iterative, creative, and not process-oriented.
 
-There truly is not a one-size fits all solution for style. The goal of this guide is to help you recognize where you are making your life difficult, so you can spend time on a truly creative process.
+There is no one-size fits all solution for style. The goal of this guide is to help you recognize where you are making your life difficult, so you can spend more time on a truly creative process.
 
 2) No matter the convention you employ, be _consistent_.
 
