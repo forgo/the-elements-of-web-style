@@ -60,7 +60,7 @@ On the other hand, consider if we allow the search results to be displayed in a 
 ## V. A FEW MATTERS OF FORM
 ### 1) Maintain proportionality.
 
-Dimensional styles such as `font-size`, `padding`, `margin`, `border`, `box-shadow`, and so on within the `<body>` of the site should resize proportionally with screen size and device orienation.
+Dimensional styles such as `font-size`, `padding`, `margin`, `border`, `box-shadow`, and so on within the `<body>` of the site should resize proportionally with screen size and device orientation.
 
 Maintaining these proportions can be accomplished with a globally-applied CSS `@media` rules. These rules are a sequence of `min-width` thresholds about which the base font size and animated properties<sup>[2](#animated-properties)</sup> can be transitioned. The `min-width`s and `font-size` specified here are intended to be absolute units<sup>[3](#css-units)</sup> (e.g. - `px`).
 
