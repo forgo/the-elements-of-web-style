@@ -60,9 +60,15 @@ On the other hand, consider if we allow the search results to be displayed in a 
 ## V. A FEW MATTERS OF FORM
 ### 1) Maintain proportionality.
 
-Dimensional styles such as `font-size`, `padding`, `margin`, `border`, `box-shadow`, and so on within the `<body>` of the site should resize proportionally with screen size and device orientation.
+Dimensional styles such as `font-size`, `padding`, `margin`, `border`, `box-shadow`, and so on within the `<body>` of the site should, ideally, resize proportionally with screen size and device orientation.
 
-Maintaining these proportions can be accomplished with a globally-applied CSS `@media` rules. These rules are a sequence of `min-width` thresholds about which the base font size and animated properties<sup>[2](#animated-properties)</sup> can be transitioned. The `min-width`s and `font-size` specified here are intended to be absolute units<sup>[3](#css-units)</sup> (e.g. - `px`).
+The disclaimer to be made here is a major one. Sometimes you are dealing with an existing design system or designers may -- in many cases -- be working from a mindset of fixed-pixel based dimensions. If this is the case, it can be unreasonable to shift to a paradigm of relative units (e.g. - `em`, `ex`, `vw`, `vh`, etc.).
+
+If this common constraint is encountered, it does not negate proportionality as a measure of good form, but does make adapting to different screen sizes a more meticulous exercise and one which could factor into your maintenance costs and designs evolve over time. Think of maintaining separate components for different devices and screen types that can diverge in source and authors over time.
+
+In a strictly pixel-based design, think of ways to write components in thematically flexible ways. For example, anticipate a "compact, "normal", and "relaxed" theme ahead of time and inject those as concrete styles in components as a matter of convention. Planning and executing this type of work may seem tedious, but this can save via the mechanism of consistency. A simple contextual switch may allow components to flow in different contexts.
+
+In a relative-units design, relativity needs a common reference point. One very convenient way of maintaining proportions can be accomplished with a globally-applied CSS `@media` rules. These rules are a sequence of `min-width` thresholds about which the base font size and animated properties<sup>[2](#animated-properties)</sup> can be transitioned. The `min-width`s and `font-size` specified here are intended to be absolute units<sup>[3](#css-units)</sup> (e.g. - `px`).
 
 The `font-size`s and thresholds are up to the designer and may be different for different content and font types. The `font-size`s are easily tweaked after the fact to produce optimal proportion. In theory, more thresholds account for more use cases.
 
@@ -225,6 +231,14 @@ You can use all the fancy tricks and tools out there, but if you do not employ t
 Where reasonable, do not rely on the automatic behavior of languages, libraries, and frameworks. The convenience of tools is negated by use cases they do not cover. If your use case falls outside the average, do not settle for average.
 
 ## VIII. AFTERWORD
+
+If you take nothing else away from this guide, I hope to convey the value of consistency. After working on many projects in many industries, I tend to value the idea of consistency over perfection. Consistency reduces the tools and time needed to make changes you will inevitably want to make. Consistency is the work you put in, accepting what you are making will not be static. Also, this practice encourages solid understanding of the problem domain. In other words, understand what pieces will change so that you can retain the quality and effort of what should be constant.
+
+There is balance in all things. We likely do not want a switch to turn on and off all lights in an entire house at once. In the same way, creating a common wire for all components should have the flexibility to be overriden. This can be accomplished several ways. One approach is to only use a thematic context if the component explicitly opts into it. Perhaps it is desirable to require components to opt-out to reduce boilerplate code for the 90% use-cases. It's generally more important that you stick to one of these approaches as a convention -- rather than to pontificate on which is better. Your goal is to reduce the time to iterate on and improve user experiences, not win a philosophy debate.
+
+Classically, this can be thought of as a separation of concern. In the past, MVC was a popular way to convey this, but I like to take it a step further. Let's assume, as good developers, we have isolated our business logic completely from our visual and formatting concerns. Then it's still behooves us to optimize the "view" by creating patterns to distinguish styles which are likely to change and those which are likely constant.
+
+This is a slightly uncomfortable elaboration as it doesn't fit neatly into conventional wisdom. You might start to see lines blurred between a business requirement and design conventions. For instance, if a users is supposed to be allowed to type more content, but designers only anticipated content of a certain length, it is your job to reconcile that difference. There may not be a right answer, and -- if there's an optimal one -- it may not be the easiest or most cost-effective. Those conversations need to be had, and the more you experience these situations, the more you will be able to quickly adapt or have a solution on hand to address it again.
 
 ## IX. GLOSSARY
 
