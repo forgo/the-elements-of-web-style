@@ -33,7 +33,7 @@ In other aspects of our lives, rules are more useful when applied to a broader a
 
 Here is a particularly good example of design consistency:
 
-![visualization of the box-model](https://raw.githubusercontent.com/forgo/the-elements-of-web-style/master/img/box-model-good.png)
+![visualization of the box-model](https://github.com/forgo/the-elements-of-web-style/blob/5b7bf57744e2e44f0072fce738ab220d418e7b1b/img/box-model-good.png)
 
 [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools/) gives us a convenient way to visualize some of the box-model by highlighting the margin and padding of elements when hovering over rules which apply to them. Train your eye to see these spacings without visual aid. Take note of spacing consistencies across the entire page. It is clear this page and the components which compose it were well-considered ahead of time.
 
